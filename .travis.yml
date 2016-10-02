@@ -18,8 +18,8 @@ services:
   - mysql
 
 before_script:
-  - mysql -u root -e 'create database pollsdb;'
+  - mysql -e 'create database pollsdb;'
 
 # run tests
 script: 
-  - python manage.py test polls
+  - python manage.py test
