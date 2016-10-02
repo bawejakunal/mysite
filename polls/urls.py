@@ -8,7 +8,7 @@ from . import views
 
 # Disable pylint warning for variables treated as constants
 # pylint: disable=C0103
-
+app_name = 'polls'
 urlpatterns = [
     # ex: /polls/
     url(r'^$', views.index, name='index'),
