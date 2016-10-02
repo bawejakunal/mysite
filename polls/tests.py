@@ -2,10 +2,12 @@ import datetime
 
 from django.utils import timezone
 from django.test import TestCase
+from django.urls import reverse
 
 from .models import Question
 
 # Create your tests here.
+
 
 class QuestionMethodTests(TestCase):
 
@@ -17,3 +19,10 @@ class QuestionMethodTests(TestCase):
         time = timezone.now() + datetime.timedelta(days=30)
         future_question = Question(pub_date=time)
         self.assertIs(future_question.was_published_recently(),False)
+
+
+def create_question(question_text, days):
+    time = timezone.now() + datetime.timedelta(days=days)
+    return Question.objects.create(question_text=question_text, pub_date=time)
+
+class QuestionViewTests(TestCase):
