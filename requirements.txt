@@ -1,2 +1,2 @@
-django==$DJANGO_VERSION
+django==1.10.1
 MySQL-python
