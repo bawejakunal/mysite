@@ -10,5 +10,12 @@ install:
   - pip install --user --upgrade pip
   - pip install --user -r requirements.txt
 
+# setup MySQL database
+services:
+  - mysql
+
+before_script:
+  - mysql -u root -e 'create database pollsdb;'
+
 # run tests
 script: "python manage.py test polls"
