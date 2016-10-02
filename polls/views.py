@@ -40,4 +40,4 @@ def vote(request, question_id):
         selected_choice.save()
         # Always return an HttpResponseRedirect after the voting
         # This prevents data to be posted twice if user presses Back
-    return HttpResponseRedirect(reverse('polls:results', args=(question.id)))
+    return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
