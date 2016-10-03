@@ -11,8 +11,7 @@ env:
 
 # command to install dependencies
 install:
-  - pip install -q Django==$DJANGO_VERSION
-  - pip install -q mysqlclient
+  - pip install --user -r requirements.txt
 
 # setup MySQL database
 
