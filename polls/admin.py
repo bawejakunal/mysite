@@ -1,3 +1,7 @@
+"""
+    Django application rights for admin
+"""
+
 from django.contrib import admin
 from .models import Question, Choice
 # Register your models here.
