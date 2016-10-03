@@ -3,11 +3,12 @@ language: python
 
 #Django environment version
 env:
-  - DJANGO_VERSION=1.10.1 DJANGO_SETTINGS_MODULE=mysite.settings
+  - DJANGO_VERSION=1.10.2 DJANGO_SETTINGS_MODULE=mysite.settings
 
 # command to install dependencies
 install:
-  - pip install --user -r requirements.txt
+  - pip install --user -r django==$DJANGO_VERSION --use-mirrors
+  - pip install --user mysqlclient --use-mirrors
 
 # setup MySQL database
 services:
@@ -18,4 +19,4 @@ before_script:
 
 # run tests
 script: 
-  - python manage.py test -v 2
+  - python manage.py test

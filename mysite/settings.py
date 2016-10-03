@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'pollsdb',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'projectfi',
         'HOST': '',
         'PORT': ''
     }
