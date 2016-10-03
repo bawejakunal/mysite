@@ -11,7 +11,7 @@ env:
 
 # command to install dependencies
 install:
-  - pip install --user -r requirements.txt
+  - pip install -q -r requirements.txt
 
 # setup MySQL database
 
