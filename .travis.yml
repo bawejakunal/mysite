@@ -7,15 +7,15 @@ env:
 
 # command to install dependencies
 install:
-  - pip install --user --upgrade pip
-  - pip install --user -r requirements.txt
+  - pip install --upgrade pip
+  - pip install -r requirements.txt
 
 # setup MySQL database
 services:
   - mysql
 
 before_script:
-  - mysql -e 'create database pollsdb;'
+  - mysql -e 'create database IF NOT EXISTS pollsdb;'
 
 # run tests
 script: 
