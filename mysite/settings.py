@@ -78,10 +78,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'pollsdb',
-        'USER': 'root',
+        'USER': 'travis',
         'PASSWORD': '',
-        'HOST': '',
-        'PORT': ''
+        'HOST': '127.0.0.1',
     }
 }
 

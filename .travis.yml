@@ -1,5 +1,9 @@
 language: python
+
+python:
   - "2.7"
+
+services: mysql
 
 #Django environment version
 env:
@@ -7,16 +11,13 @@ env:
 
 # command to install dependencies
 install:
-  - pip install --user django==$DJANGO_VERSION --use-mirrors
-  - pip install --user MySQL-python --use-mirrors
-  - pip install --user mysqlclient --use-mirrors
+  - pip install -q Django==$DJANGO_VERSION
+  - pip install -q mysqlclient
 
 # setup MySQL database
-services:
-  - mysql
 
 before_script:
-  - mysql -e 'create database IF NOT EXISTS pollsdb;'
+  - mysql -e 'create database pollsdb;'
 
 # run tests
 script: 
