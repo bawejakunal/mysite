@@ -7,8 +7,8 @@ env:
 
 # command to install dependencies
 install:
-  - pip install --user django==$DJANGO_VERSION --use-mirrors
-  - pip install --user mysqlclient --use-mirrors
+  - pip install django==$DJANGO_VERSION --use-mirrors
+  - pip install mysqlclient --use-mirrors
 
 # setup MySQL database
 services:
