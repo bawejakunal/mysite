@@ -35,13 +35,13 @@ __Subject__: COMS W4156 Advanced Software Engineering (Fall-2016)
 
 
 ###Setup Polls Application (Linux Environment)
-Execute following commands for installation on linux platform:
-        - `apt-get install mysql-server`
-        - `apt-get install mysql-client`
-        - `pip install -r requirements.txt`
+Execute following commands for installation on linux platform:  
+        * `apt-get install mysql-server`
+        * `apt-get install mysql-client`
+        * `pip install -r requirements.txt`
 
 
 ###Start Polls Application
-        - Start Server: `python manage.py runserver`
-        - Navigate to [http://localhost:8080/polls/]{http://localhost:8080/polls/}
+        * Start Server: `python manage.py runserver`
+        * Navigate to [http://localhost:8080/polls/]{http://localhost:8080/polls/}
 
