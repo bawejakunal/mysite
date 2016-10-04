@@ -22,7 +22,7 @@ __Subject__: COMS W4156 Advanced Software Engineering (Fall-2016)
   1. Development Framework: Django (Python based server)
   2. HTML
   3. JavaScript/jQuery
-  4. CSS
+  4. CSS/Bootstrap
   5. Static Analyser: PyLint
   6. Build & Integration: travis-ci.com
 

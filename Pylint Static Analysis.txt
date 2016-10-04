@@ -1,0 +1,140 @@
+D:\ASE\mysite>pylint --load-plugins pylint_django polls
+No config file found, using default configuration
+************* Module polls.tests
+C:116, 0: Final newline missing (missing-final-newline)
+E: 73,33: Instance of 'WSGIRequest' has no 'context' member (no-member)
+E: 81,33: Instance of 'WSGIRequest' has no 'context' member (no-member)
+E: 92,33: Instance of 'WSGIRequest' has no 'context' member (no-member)
+E:103,12: Instance of 'WSGIRequest' has no 'context' member (no-member)
+E:115,12: Instance of 'WSGIRequest' has no 'context' member (no-member)
+************* Module polls.urls
+I: 10, 0: Locally disabling invalid-name (C0103) (locally-disabled)
+************* Module polls.views
+I: 14, 0: Locally disabling too-many-ancestors (R0901) (locally-disabled)
+I: 26, 0: Locally disabling too-many-ancestors (R0901) (locally-disabled)
+I: 34, 0: Locally disabling too-many-ancestors (R0901) (locally-disabled)
+
+
+Report
+======
+102 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |7      |7          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |8      |8          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |12     |12         |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|function |2      |2          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    django
+      \-apps (polls.apps)
+      \-conf
+      | \-urls (polls.urls)
+      \-contrib
+      | \-admin (polls.admin)
+      \-db
+      | \-models (polls.models)
+      \-http (polls.views)
+      \-shortcuts (polls.views)
+      \-test (polls.tests)
+      \-urls (polls.tests,polls.views)
+      \-utils
+      | \-encoding (polls.models)
+      | \-timezone (polls.tests,polls.views,polls.models)
+      \-views
+        \-generic (polls.views)
+    polls
+      \-models (polls.tests,polls.admin,polls.views)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |121    |44.98 |121      |=          |
++----------+-------+------+---------+-----------+
+|docstring |90     |33.46 |90       |=          |
++----------+-------+------+---------+-----------+
+|comment   |13     |4.83  |13       |=          |
++----------+-------+------+---------+-----------+
+|empty     |45     |16.73 |45       |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |1      |1        |=          |
++-----------+-------+---------+-----------+
+|refactor   |0      |0        |=          |
++-----------+-------+---------+-----------+
+|warning    |0      |0        |=          |
++-----------+-------+---------+-----------+
+|error      |5      |5        |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++------------+-------+--------+---------+-----------+
+|module      |error  |warning |refactor |convention |
++============+=======+========+=========+===========+
+|polls.tests |100.00 |0.00    |0.00     |100.00     |
++------------+-------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++----------------------+------------+
+|message id            |occurrences |
++======================+============+
+|no-member             |5           |
++----------------------+------------+
+|locally-disabled      |4           |
++----------------------+------------+
+|missing-final-newline |1           |
++----------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 7.45/10 (previous run: 7.45/10, +0.00)

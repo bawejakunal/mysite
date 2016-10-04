@@ -23,7 +23,7 @@ class IndexView(generic.ListView):  # pylint:disable=too-many-ancestors
         return Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
 
 
-class DetailView(generic.DetailView):
+class DetailView(generic.DetailView): # pylint:disable=too-many-ancestors
     """
     Class DetailView will use generic DetailView in detail.html
     """
@@ -31,7 +31,7 @@ class DetailView(generic.DetailView):
     template_name = 'polls/detail.html'
 
 
-class ResultsView(generic.DetailView):
+class ResultsView(generic.DetailView): # pylint:disable=too-many-ancestors
     """
     Class ResultView will use generic DetailView in results.html
     """
