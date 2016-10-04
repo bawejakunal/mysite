@@ -1,8 +1,8 @@
 #Mysite: A simple polling web app
 
-__Team__: Narcodes
-__Pair__: Kunal Baweja (kb2896) and Siddharth Shah (sas2387)
-__Subject__: COMS W4156 Advanced Software Engineering (Fall-2016)
+__Team__: Narcodes  
+__Pair__: Kunal Baweja (kb2896) and Siddharth Shah (sas2387)  
+__Subject__: COMS W4156 Advanced Software Engineering (Fall-2016)  
 
 ###Build Status
 
@@ -24,4 +24,24 @@ __Subject__: COMS W4156 Advanced Software Engineering (Fall-2016)
         3. JavaScript/jQuery
         4. CSS
         5. Static Analyser: PyLint
-        6. Build Tool: travis-ci.com
+        6. Build & Integration: travis-ci.com
+
+
+###Required Packages
+        1. django version 1.10.2
+        2. mysqlclient python package
+        3. mysql server
+        4. mysqclient
+
+
+###Setup Polls Application (Linux Environment)
+Execute following commands for installation on linux platform:
+        - `apt-get install mysql-server`
+        - `apt-get install mysql-client`
+        - `pip install -r requirements.txt`
+
+
+###Start Polls Application
+        - Start Server: `python manage.py runserver`
+        - Navigate to [http://localhost:8080/polls/]{http://localhost:8080/polls/}
+
