@@ -43,5 +43,5 @@ Execute following commands for installation on linux platform:
 
 ###Start Polls Application
   * Start Server: `python manage.py runserver`
-  * Navigate to [http://localhost:8080/polls/](http://localhost:8080/polls/)
+  * Navigate to [http://localhost:8000/polls/](http://localhost:8080/polls/)
 
